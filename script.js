@@ -21,11 +21,17 @@ new Swiper('.card-wrapper', {
         0: {
             slidesPerView: 1
         },
+        675: {
+            slidesPerView: 2
+        },
         768: {
             slidesPerView: 2
         },
         1024: {
             slidesPerView: 3
+        },
+        1280: {
+            slidesPerView: 4
         },
     }
 

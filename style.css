@@ -31,14 +31,17 @@ img {
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.5s;
 }
-
+.card-list .card-item:hover {
+  border: 1px solid #ff9800;
+}
 .card-list .card-item img {
   width: 100%;
   aspect-ratio: 16/9;
-  object-fit: cover;
   border-radius: 10px;
-  height: 230px;
+  min-height: 280px;
 }
 
 .content {
@@ -95,4 +98,15 @@ img {
 .card-wrapper .swiper-button-next,
 .card-wrapper .swiper-button-prev {
   color: #ff9800;
+  font-size: 25px;
+}
+
+@media (max-width: 425px) {
+  .card-wrapper .swiper-button-next,
+  .card-wrapper .swiper-button-prev {
+    display: none;
+  }
+  .card-wrapper {
+    margin: 0 20px 35px;
+  }
 }
